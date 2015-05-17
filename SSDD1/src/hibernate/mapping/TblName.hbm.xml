@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/05/2015 11:39:08 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="bean.TblName" table="tbl_name" catalog="ssdd">
+        <id name="identificador" type="string">
+            <column name="Identificador" length="13" />
+            <generator class="assigned" />
+        </id>
+        <property name="sector" type="string">
+            <column name="Sector" length="6" />
+        </property>
+        <property name="ugel" type="string">
+            <column name="Ugel" length="4" />
+        </property>
+        <property name="institucion" type="string">
+            <column name="Institucion" length="40" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="Direccion" length="44" />
+        </property>
+        <property name="distrito" type="string">
+            <column name="Distrito" length="24" />
+        </property>
+    </class>
+</hibernate-mapping>
